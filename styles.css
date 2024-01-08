@@ -88,7 +88,16 @@ h1 {
   box-shadow: 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   width: 100%;
+  transition: background-color 0.2s;
 }
+
+.sign-up:hover {
+  background-color: rgb(253, 216, 194);
+}
+
+/* .sign-up:focus {
+  background-color: rgb(243, 125, 56);
+} */
 
 .or {
   text-align: center;
@@ -119,7 +128,7 @@ input {
   margin-bottom: 20px;
   width: 100%;
 
-  font-size: 14px;
+  font-size: 16px;
   padding: 15px;
   border: 1px solid rgb(245, 245, 245);
   border-radius: 12px;
@@ -136,6 +145,7 @@ input::placeholder {
 
 input:focus {
   outline: none;
+  background-color: rgb(253, 216, 194);
 }
 
 .create-account {
@@ -148,13 +158,19 @@ input:focus {
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
-  transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.2s;
   
 }
 
-.create-acount:hover {
+.create-account:hover, .login-span:hover {
+  opacity: 0.8;
+}
+
+.create-account:focus, .login-span:hover{
   opacity: 0.6;
 }
+
+
 
 .login {
   margin-bottom: 40px;
@@ -166,6 +182,8 @@ input:focus {
 .login-span {
   color: rgb(255, 93, 2);
 }
+
+
 
 .logo-con {
  width: 200px; 
